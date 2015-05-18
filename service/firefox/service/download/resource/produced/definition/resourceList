@@ -1,0 +1,3 @@
+[
+ { "variableName" : "download" , "typeName" : "dynamicDT.SHARE_LINK", "constructorArgs" : [{ "typeName" : "DIRECTORY" , "variableName" : "SHARE_LINK_SOME_DIRECTORY" , "presence" : "required" },{ "typeName" : "DIRECTORY" , "variableName" : "SHARE_LINK_POINT_DIRECTORY" , "presence" : "required" }] }
+]
