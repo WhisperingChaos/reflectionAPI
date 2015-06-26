@@ -70,7 +70,7 @@ ADD ./bin/*       ${SERVICE_MANAGEMENT_BIN}/
 #ADD ./lib/*      ${SERVICE_MANAGEMENT_LIB}/
 
 RUN mkdir -p '/bjail/restify'                                \
-    # && rm /restserver.js                                     \
+    && rm /restserver.js                                     \
     && touch '/bjail/restify/restserver.js'                  \
     && ln -s '/bjail/restify/restserver.js' '/restserver.js' \
     && echo '#!/bin/bash'> /startup.sh                       \
