@@ -1,0 +1,3 @@
+dt_bindagent.build: dt_basic.build
+dt_restserver.build: dt_basic.build
+dt_restservertest.build: dt_basic.build
