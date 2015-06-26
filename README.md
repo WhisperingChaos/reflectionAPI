@@ -4,7 +4,7 @@
 + Create subdirectory within 'projects' named 'desktop'
 + Make 'desktop' directory current.
 + git clone [reflectionAPI - master](https://github.com/WhisperingChaos/reflectionAPI) directly into 'desktop'.
-  + ```git clone git@github.com:WhisperingChaos/reflectionAPI.git .``
+  + ```git clone git@github.com:WhisperingChaos/reflectionAPI.git .```
 + git clone [binaryjail - restify] (https://github.com/binaryjail/binaryjail) into 'desktop/binaryjail'
   + ```git clone git@github.com:binaryjail/binaryjail.git```
 + while current in 'desktop' run ```./SharedComponentHardLinks.sh create``` .  This will establish proper hardlinks to files in the build context of the ```dt_basic``` image.
