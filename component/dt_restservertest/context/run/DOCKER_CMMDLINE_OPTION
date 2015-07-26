@@ -1,1 +1,1 @@
--i --tty
+-i --tty -v /home/secure/Desktop/project/desktop/component/dt_restservertest/context/build/script:/bjail/test -p 8080 -p 5858
