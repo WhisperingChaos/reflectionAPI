@@ -1,1 +1,1 @@
--i --tty -v <Change to reflect absolute path of directory containing restserver.js on host system>:/bjail/restify/
+-i --tty -v /home/secure/Desktop/project/desktop/component/dt_basic/context/build:/bjail/restify/
