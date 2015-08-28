@@ -1,2 +1,8 @@
 *~
 binaryjail/
+component/dt_basic/
+component/dt_restservertest/context/build/script/out/
+component/dt_restservertest/context/build/script/node_modules/
+image/
+component/dt_restservertest/context/build/script/play.js
+dlwRun.sh
