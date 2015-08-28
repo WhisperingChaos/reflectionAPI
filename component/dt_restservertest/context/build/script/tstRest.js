@@ -8,7 +8,7 @@ Test_RESTget.prototype = Object.create( Tst.Test.prototype);
 Test_RESTget.prototype.constructor = Test_RESTget
 function Test_RESTget (){
 	Tst.Test.call(this);
-	this.inputContext( { "inp" : { "hostRestServer": { "IP_URLaddress" : '172.17.0.134', "port":'8080'}}})
+	this.inputContext( { "inp" : { "hostRestServer": { "IP_URLaddress" : '172.17.1.100', "port":'8080'}}})
 	this.command( new Tst.CmmdHTTPget())
 	var cmmdelem = new Tst.CmmdElemVariable()
 	cmmdelem.assertSpec(  'inp.hostRestServer.IP_URLaddress != null' ,'\'Required IP_URLaddress missing.\'',
@@ -48,6 +48,12 @@ function Test_SubServiceList (){
 }
 
 new Test_Version().execute()
-.then( new Test_ServiceList().execute())
-.then( new Test_SubServiceList().execute())
-.done()
+	.then( function ( x) { 
+		return new Test_ServiceList().execute();})
+	.then( function ( x) { 
+		return new Test_SubServiceList().execute();})
+/*		
+new Test_Version().execute().done()
+new Test_ServiceList().execute().done()
+new Test_SubServiceList().execute().done()
+*/
